@@ -534,7 +534,7 @@ Works mainly with a downstream [Packager](#packager), and has [Author](#author)'
 This role is necessary when...
 
 * Upstream Author roles are not responsive or available, and thereby security fixes aren't applied there.
-* When downstream constraints and requirements call for it – e.g. when back-porting of fixes are needed due to downstream LTS requirements.
+* When downstream constraints and requirements call for it – e.g. when back-porting of fixes are needed due to downstream long-term support (LTS) requirements.
 
 > [!NOTE]
 > * Patchers (a role that often is held by the same person as the Packager), may select and apply patches before building.
@@ -569,7 +569,7 @@ Concerns themselves with correct package format and structure, and that package 
 > * Upstream sources may be…
 >     * Author's repository, or a Custodian's if a project is dormant (e.g. a repository on Codeberg).
 >     * Language-specific packages distributed by a Language Ecosystem (e.g. CPAN).
-> * E.g. someone in the #debian-perl group downloads, builds, tests and installs something from CPAN, but instead of doing a regular install, they us tooling like `dh-make-perl` to produce a custom installation directory that can be incorporated into a .deb archive.
+> * E.g. someone in the #debian-perl group downloads, builds, tests and installs something from CPAN, but instead of doing a regular install, they use tooling like `dh-make-perl` to produce a custom installation directory that can be incorporated into a .deb archive.
 
 | Do | Field name                     | Required | Data type    | CycloneDX 1.6                                          | SPDX | Required by                        |
 | -- | :----------------------------- | :------- | :----------- | ------------------------------------------------------ | ---- | ---------------------------------- |
